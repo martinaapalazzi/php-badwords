@@ -4,4 +4,7 @@
 
     $badWord = $_GET['badWord'];
     echo $badWord;
+
+    $censured = str_replace($badWord, '***', $userText);
+    echo $censured;
 ?>
