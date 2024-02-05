@@ -13,12 +13,11 @@
             <label for="insertText" class="form-label">
                 Insert text
             </label>
-            <input type="textarea" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <input name="usertextarea" type="textarea" class="form-control" id="textarea" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
+            <label for="insertBadWord" class="form-label">Badword</label>
+            <input type="text" class="form-control" id="textbadword">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
