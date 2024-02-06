@@ -1,12 +1,9 @@
 <?php
     $userText = $_GET['userTextarea'];
-    echo $userText;
 
     $badWord = $_GET['badWord'];
-    echo $badWord;
 
     $censured = str_replace($badWord, '***', $userText);
-    echo $censured;
 ?>
 
 <!DOCTYPE html>
@@ -17,17 +14,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <h3>
+        Length userText: <?php echo ' '.strlen($userText).' characters'; ?>
+    </h3>
     <p>
         <?php
             echo $userText;
-            echo 'length usertext'.": ".strlen($userText);
         ?>
     </p>
+
+    <div>
+        <h3>
+            Censured word:
+        </h3>
+        <p>
+            <?php echo $badWord ?>
+        </p>
+    </div>
+
+    <h3>
+        Length with censured word: <?php echo ' '.strlen($badWord).' characters'; ?>
+    </h3>
     <p>
         <?php
             echo $censured;
-            echo 'length badword'.": ".strlen($badWord);
         ?>
     </p>
 

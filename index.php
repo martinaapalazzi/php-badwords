@@ -10,14 +10,14 @@
 
     <form action="about.php" method="GET">
         <div class="mb-3">
-            <label for="insertText" class="form-label">
+            <label for="userTextarea" class="form-label">
                 Insert text
             </label>
-            <input name="userTextarea" type="textarea" class="form-control" id="textarea" aria-describedby="">
+            <input name="userTextarea" id="userTextarea" type="textarea" class="form-control" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="insertBadWord" class="form-label">Badword</label>
-            <input name="badWord" type="text" class="form-control" id="textbadword">
+            <label for="badWord" class="form-label">Badword</label>
+            <input name="badWord" id="badWord" type="text" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
